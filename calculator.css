@@ -1,50 +1,180 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.inter-font {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body{
-    background: linear-gradient(90deg,#5d136f 0%,#721489 40%,#b848d4 70%,#c470da); 
-    background-color: linear-gradient(100% );
-    display: flex;
-    justify-content: space-evenly;
-    height: 100vh;
-    align-items: center;
+    overflow-y: hidden;
 }
 
-.first-container{
+.main-content{
+    background: linear-gradient(90deg, #5d136f 0%, #721489 40%, #b848d4 70%, #c470da);
+    background-color: linear-gradient(100%);
+    display: flex;
+    /* justify-content: center; */
+    height: 100vh;
+    align-items: center;
+    font-family: "Roboto", serif;
+}
+.first-container {
     margin-right: 5em;
     background-color: rgba(42, 46, 55, 1);
     width: 45vh;
-    height: 80vh;
+    height: 90vh;
     border: 7px solid white;
     border-radius: 30px;
     /* position: fixed; */
     overflow: hidden;
+    margin-left: 6em;
 }
 
-.container-01{
+.container-02 {
     background-color: blue;
     width: 100%;
-    height: 63%;
-    margin-top: 11.9em;
+    height: 66%;
+    /* margin-top: 11.9em; */
 }
 
-body h2{
-    padding-right: 3em;
+body h2 {
+    margin-left: 4em;
     color: white;
+    font-weight: 300;
 }
 
-.row{
+.row {
     display: flex;
     /* background-color: chartreuse; */
-    height: 20%;
+    height: 16%;
+
 }
 
-.row button{
+.row button {
     width: 13vh;
     background-color: rgba(47, 54, 70, 1);
     color: white;
     font-size: 1.1rem;
+    border: 1px solid rgba(42, 46, 55, 1);
+    cursor: pointer;
 }
+
+.container-01 {
+    background-color: rgba(42, 46, 55, 1);
+    /* background-color: rosybrown; */
+    width: 100%;
+    height: 37%;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    text-align: right;
+    /* padding: 1em; */
+    padding-top: 3.4em;
+    padding-left: .2em;
+    padding-right: .2em;
+    outline: none;
+}
+
+.row button.bg-purple{
+    background-color: rgb(191, 59, 220);
+}
+
+.row button.color-purple{
+    color: rgba(170, 126, 189, 1);
+}
+
+button:focus {
+    outline: none; /* Removes the default outline */
+    border: none;  /* Removes any border changes */
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+  
+}
+
+.info-button{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.info-button:hover{
+    color: rgba(170, 126, 189, 1);
+}
+
+.pop-up{
+    display: none;
+    background-color: antiquewhite;
+    width: 50vh;
+    /* margin-right: 5em; */
+    margin-top: 6em;
+    border-radius: 10px;
+}
+
+.pop-up-content{
+    padding: 1em;
+    font-size: .8rem;
+}
+
+@media (max-width: 320px) {
+    /* Styles for very small mobile devices */
+    body h2 {
+        display: none;
+    }
+
+    .first-container {
+        background-color: rgba(42, 46, 55, 1);
+        width: 27vh;
+    min-width: 10vh; /* Ensure it doesn’t shrink too much */
+    max-width: 90vw; /* Cap the width to fit most screens */
+        height: 90vh;
+        border: 7px solid white;
+        border-radius: 30px;
+        /* position: fixed; */
+        overflow: hidden;
+    }
+  }
+
+  @media (max-width: 480px) {
+    /* Styles for standard mobile devices */
+    body h2 {
+        display: none;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    /* Styles for tablets in portrait mode */
+
+  }
+
+  @media (max-width: 1024px) {
+    /* Styles for tablets in landscape mode */
+  }
+
+  @media (max-width: 1366px) {
+    /* Styles for small laptops */
+  }
+
+  @media (max-width: 1920px) {
+    /* Styles for most desktop screens */
+  }
+
+  @media (min-width: 3840px) {
+    /* Styles for ultra-high-definition screens */
+  }
+  

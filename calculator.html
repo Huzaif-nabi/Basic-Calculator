@@ -4,44 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=info" />
     <title>Calculator</title>
 </head>
 <body>
-    <h2>Welcome to my Calculator!</h2>
-    <div class="first-container">
-        <div class="container-01">
-            <div class="row">
-                <button>C</button>
-                <button>%</button>
-                <button>M+</button>
-                <button>M-</button>
+    <div class="main-content">
+
+        <h2>Welcome to my Calculator! <button class="info-button">
+            <span class="material-symbols-outlined">info
+            </span>
+        </button></h2>
+        <div class="pop-up">
+            <div class="pop-up-content">
+                This is Basic Calculator made from HTML, CSS and JavaScript. <br>
+                Note : To clear the memory just use C. Key Presses are functional. <br>
+                For any queries mail us on huzaif.nabi22@spit.ac.in
             </div>
-            <div class="row">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>*</button>
-            </div>
-            <div class="row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>/</button>
-            </div>
-            <div class="row">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-            </div>
-            <div class="row">
-                <button>0</button>
-                <button>.</button>
-                <button>=</button>
-                <button>-</button>
+        </div>
+        <div class="first-container">
+            <input type="text" class="container-01">
+            <div class="container-02">
+                <div class="row">
+                    <button class="button color-purple">C</button>
+                    <button class="button color-purple">DEL</button>
+                    <button class="button color-purple">%</button>
+                    <button class="button bg-purple">-</button>
+                </div>
+                <div class="row">
+                    <button class="button">7</button>
+                    <button class="button">8</button>
+                    <button class="button">9</button>
+                    <button class="button bg-purple">*</button>
+                </div>
+                <div class="row">
+                    <button class="button">4</button>
+                    <button class="button">5</button>
+                    <button class="button">6</button>
+                    <button class="button bg-purple">/</button>
+                </div>
+                <div class="row">
+                    <button class="button">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button bg-purple">+</button>
+                </div>
+                <div class="row">
+                    <button class="button">0</button>
+                    <button class="button">.</button>
+                    <button class="button">=</button>
+                    <button class="button bg-purple">)</button>
+                </div>
+                <div class="row">
+                    <button class="button">M+</button>
+                    <button class="button">M-</button>
+                    <button class="button">MR</button>
+                    <button class="button bg-purple">(</button>
+                </div>
             </div>
         </div>
         
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
