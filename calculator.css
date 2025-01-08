@@ -141,7 +141,7 @@ button:focus {
 
     .first-container {
         width: 75vh !important;
-        height: 70vh;
+        height: 70vh !important;
         border-radius: 30px;
        
     }
@@ -168,6 +168,11 @@ button:focus {
     body h2 {
         display: none;
     }
+
+    .first-container {
+        height: 70vh !important;
+       
+    }
 }
 
 @media (max-width: 768px) {
@@ -183,6 +188,10 @@ button:focus {
 
     .pop-up-content {
         font-size: .7rem;
+    }
+    .first-container {
+        height: 80vh;
+       
     }
 }
 
