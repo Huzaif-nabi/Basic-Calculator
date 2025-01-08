@@ -11,6 +11,7 @@ Array.from(buttons).forEach((button)=>{
             else if(e.target.innerHTML == 'C'){
                 string = "";
                 document.querySelector('input').value = string;
+                memory = 0;
             }
             else if (e.target.innerHTML === 'M+') {
                 try {
@@ -54,13 +55,14 @@ body.addEventListener('keydown', (e)=>{
     const validKeys = "0123456789+-*/.%()";
     try{
         if(e.key == '=' || e.key == 'Enter'){
-            e.preventDefault();
+            e.preventDefault();                 // As we know that by default when we press enter, the page reloads. So, to prevent that we use this function.
             string = eval(string);
             document.querySelector('input').value = string;
         }
         else if(e.key == 'c' || e.key == 'C'){
                 string = "";
                 document.querySelector('input').value = string;
+                memory = 0;
             }
         else if(validKeys.includes(e.key)){
                 string = string + e.key;

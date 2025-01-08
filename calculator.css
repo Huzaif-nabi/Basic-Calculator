@@ -120,7 +120,7 @@ button:focus {
     display: none;
     background-color: rgb(224, 215, 250);
     width: 50vh;
-    height: 11vh;
+    height: 18vh;
     margin-top: 6em;
     border-radius: 10px;
 }
