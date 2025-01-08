@@ -60,7 +60,7 @@ Material Symbols: Used for the info button icon.
 # How to Use
 
 Clone the repository:
-git clone https://github.com/yourusername/calculator-web-app.git
+https://github.com/Huzaif-nabi/Basic-Calculator.git
 
 Navigate to the project directory
 Open the index.html file in your browser.
@@ -75,9 +75,9 @@ Basic-Calculator/
 └── README.md        # Project documentation
 
 # Screenshots
-(./screenshots/127.0.0.1_5500_Basic-Calculator_calculator.html.png)
+(127.0.0.1_5500_Basic-Calculator_calculator.html.png)
 
-
+If not visible here go to screenshot folder.
 
 # Contact
 
