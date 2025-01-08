@@ -77,7 +77,7 @@ Basic-Calculator/
 # Screenshots
 (127.0.0.1_5500_Basic-Calculator_calculator.html.png)
 
-
+If not visible here go to screenshot folder.
 
 # Contact
 
