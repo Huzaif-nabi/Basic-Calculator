@@ -75,7 +75,7 @@ Basic-Calculator/
 └── README.md        # Project documentation
 
 # Screenshots
-(./screenshots/127.0.0.1_5500_Basic-Calculator_calculator.html.png)
+(127.0.0.1_5500_Basic-Calculator_calculator.html.png)
 
 
 
