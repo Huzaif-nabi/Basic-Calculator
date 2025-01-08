@@ -27,7 +27,7 @@ body{
     font-family: "Roboto", serif;
 }
 .first-container {
-    margin-right: 5em;
+    margin-right: 3em;
     background-color: rgba(42, 46, 55, 1);
     width: 45vh;
     height: 90vh;
@@ -118,63 +118,107 @@ button:focus {
 
 .pop-up{
     display: none;
-    background-color: antiquewhite;
+    background-color: rgb(224, 215, 250);
     width: 50vh;
-    /* margin-right: 5em; */
+    height: 11vh;
     margin-top: 6em;
     border-radius: 10px;
 }
 
 .pop-up-content{
+    /* background-color: royalblue; */
     padding: 1em;
-    font-size: .8rem;
+    font-size: .9rem;
+    width: auto;
+    height: auto;
 }
 
+/* Media Queries (Mobile First Approach) */
 @media (max-width: 320px) {
-    /* Styles for very small mobile devices */
     body h2 {
         display: none;
     }
 
     .first-container {
-        background-color: rgba(42, 46, 55, 1);
-        width: 27vh;
-    min-width: 10vh; /* Ensure it doesn’t shrink too much */
-    max-width: 90vw; /* Cap the width to fit most screens */
+        width: 75vh !important;
         height: 90vh;
-        border: 7px solid white;
         border-radius: 30px;
-        /* position: fixed; */
-        overflow: hidden;
+       
     }
-  }
+}
 
-  @media (max-width: 480px) {
-    /* Styles for standard mobile devices */
+
+@media (max-width: 1024px) {
+    body h2 {
+        margin-left: 2em;
+        width: 18%;
+    }
+
+    .pop-up {
+        width: 22vh;
+        height: 24vh;
+    }
+
+    .pop-up-content {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 480px) {
     body h2 {
         display: none;
     }
-  }
-  
+}
 
-  @media (max-width: 768px) {
-    /* Styles for tablets in portrait mode */
+@media (max-width: 768px) {
+    body h2 {
+        margin-left: 2em;
+        width: 23%;
+    }
 
-  }
+    .pop-up {
+        width: 28vh;
+        height: 25vh;
+    }
 
-  @media (max-width: 1024px) {
-    /* Styles for tablets in landscape mode */
-  }
+    .pop-up-content {
+        font-size: .7rem;
+    }
+}
 
-  @media (max-width: 1366px) {
-    /* Styles for small laptops */
-  }
 
-  @media (max-width: 1920px) {
-    /* Styles for most desktop screens */
-  }
+@media (max-width: 1366px) {
+    /* Additional styles for small laptops if needed */
+}
 
-  @media (min-width: 3840px) {
-    /* Styles for ultra-high-definition screens */
-  }
-  
+@media (max-width: 1920px) {
+    /* Additional styles for desktops if needed */
+}
+
+@media (min-width: 2560px) {
+    body h2 {
+        font-size: 3rem;
+    }
+
+    .pop-up {
+        width: 25vh;
+        height: 22vh;
+    }
+
+    .pop-up-content {
+        font-size: 1.8rem;
+    }
+
+    .info-button {
+        height: 3vh;
+        width: 3vh;
+    }
+
+    .row button {
+        font-size: 2.5rem;
+    }
+
+    .icon-large {
+        font-size: 60px !important;
+    }
+}

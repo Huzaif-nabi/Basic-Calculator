@@ -84,6 +84,8 @@ let infoButton = document.querySelector('.info-button');
 infoButton.addEventListener('click', (e)=>{
     if(popUp.style.display === 'none' || popUp.style.display === ''){
         popUp.style.display = 'flex';
+        popUp.style.alignItems = 'center';
+        popUp.style.justifyContent = 'center';
     }
     else{
         popUp.style.display = 'none';
